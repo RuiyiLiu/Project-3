@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap|Josefin+Sans|Kanit|Righteous|Teko" rel="stylesheet">
+
+    <style>
+    body{
+
+      background-image:url('images/background.gif')
+    }
+
+    img.first {
+    width: 97.3%;
+    margin-top:0.55%;
+    margin-left: -2%;
+    position:relative;
+  }
+
+  .calender {
+    margin-left: 16.3%;
+    margin-top: 0.5%;
+    width: 91%;
+    height: 138%;
+    position:absolute;;
+}
+
+    .second{
+    position: absolute;
+    width: 23%;
+    height: 100%;
+    opacity: 0.7;
+    margin-top: -1px;
+    }
+
+
+    .one{
+    font-size: 162%;
+    text-align: -webkit-center;
+    margin-left: 7%;
+    margin-top: 36px;
+    font-family: 'Kanit', sans-serif;
+    word-break:break-all;
+    }
+
+    .one {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.one .fall {
+    visibility: hidden;
+    width: 300px;
+    height:30px;
+    color: red;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.one:hover .fall {
+    visibility: visible;
+}
+
+    table.two{
+    font-size: 125%;
+    text-align: -webkit-center;
+    margin-top: 100%;
+    text-decoration: underline;
+    word-spacing: 2px;
+    font-family: 'Kanit', sans-serif;
+    line-height: 62px;
+    margin-top: 8%;
+    position: relative;
+    }
+
+    .inter {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.inter .interactive {
+    visibility: hidden;
+    font-size: 20px;
+    line-height: 25px;
+    width: 420px;
+    height:200px;
+    color: red;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.inter:hover .interactive {
+    visibility: visible;
+}
+
+    .third{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    }
+
+
+
+    </style>
+  </head>
+
+  <body>
+
+
+
+    <div>
+      <img class="first" src="images/2top.gif">
+    </div>
+
+    <div>
+      <img class="calender" src="images/calender.gif">
+    </div>
+
+
+    <div class="second" style="background-color:#E4F0FE">
+    <div class="one">Fall Semster
+    <span class="fall">Changing your Semster</span>
+  </div>
+
+    <table class="two">
+     <tr>
+       <td class="inter"style="color:#185394;font-size:x-large;">Interactive 1
+         <span class="interactive">This is your course that you can click, then will show out your course process.And the bottom number is the date that how many people visit your home page to see how much work did you done.</span>
+       <br style="color:#0AABFC">11.29.2018:40</td>
+     </tr>
+     <tr>
+       <td>Writing 1
+       <br hiddenstyle="color:#0AABFC">11.29.2018:20</td>
+     </tr>
+     <tr>
+       <td>Intro to the Modern Arts
+       <br style="color:#0AABFC">11.29.2018:10</td>
+     </tr>
+       <td>Soical Problem
+       <br style="color:#0AABFC">11.29.2018:47</td>
+     <tr>
+       <td>Physical
+       <br style="color:#0AABFC">11.29.2018:33</td>
+     </tr>
+     <tr>
+       <td>philosophy
+       <br style="color:#0AABFC">11.29.2018:16</td>
+     </tr>
+   </table>
+ </div>
+
+    <div class="third">
+      <img src="images/background.gif">
+    </div>
+
+
+    <!-- page content -->
+  </body>
+</html>
