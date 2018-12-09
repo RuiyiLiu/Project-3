@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap|Josefin+Sans|Kanit|Righteous|Teko" rel="stylesheet">
+
+  <style>
+
+  body{
+    background-color:#99B1D3;
+  }
+
+  img.first {
+    width: 97.3%;
+    margin-top:0.55%;
+    margin-left: -2%;
+    position:relative;
+  }
+
+  .calender {
+    margin-left: 16.3%;
+    margin-top: 4%;
+    width: 87%;
+    height: 138%;
+    position:absolute;;
+  }
+
+  .second{
+    position: absolute;
+    width: 28%;
+    height: 258%;
+    opacity: 0.3;
+    margin-top: -129%;
+    margin-left: -6%;
+  }
+
+
+  .head {
+    background-color:#9AC398;
+    color: black;
+    padding: 17px;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .fall {
+    position: relative;
+    display: inline-block;
+    font-family:'Kanit', sans-serif;
+  }
+
+  .fall-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 25px;
+  }
+
+  .fall-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .fall-content a:hover {background-color: #f1f1f1}
+
+  .fall:hover .fall-content {
+    display: block;
+  }
+
+  .fall:hover .head {
+    background-color: #3e8e41;
+  }
+
+  .ours {
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    line-height: 184%;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 14px;
+    margin-left: 0%;
+    padding: 2px;
+    max-width: none;
+  }
+
+  li a {
+    display: inline;
+    width: 50px;
+    color: black;
+    line-height: 3;
+  }
+
+  a.me {
+    color: #F5E6CC;
+    FONT-SIZE: xx-large;
+  }
+
+
+  .unblock {
+    font-size: large;
+    position: absolute;
+    margin-left: 72%;
+    margin-top: -50%;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  img.check {
+    position: absolute;
+    margin-left: 76%;
+    margin-top: -51.5%;
+  }
+
+  .block {
+    position: absolute;
+    font-size: large;
+    margin-left: 83%;
+    margin-top: -50%;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  img.uncheck {
+    position: absolute;
+    margin-left: 86%;
+    margin-top: -51.5%;
+  }
+
+
+.explain {
+    font-size: medium;
+    font-family: 'Kanit', sans-serif;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: -47%;
+}
+
+  .unfinished {
+    position: absolute;
+    font-size: large;
+    margin-left: 74%;
+    margin-top: -36%;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  img.red {
+    position: absolute;
+    margin-left: 70%;
+    margin-top: -36.5%;
+  }
+
+  .finished {
+    position: absolute;
+    font-size: large;
+    margin-left: 88%;
+    margin-top: -36%;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  img.yellow {
+    position: absolute;
+    margin-left: 84%;
+    margin-top: -36.5%;
+  }
+
+
+  .calender {
+    margin-left: 15.3%;
+    margin-top: -37%;
+    width: 87%;
+    height: 138%;
+    position: absolute;
+  }
+
+  img.left {
+    margin-left: 19%;
+    margin-top: -13%;
+    position: absolute;
+  }
+
+  img.right {
+    margin-left: 93.4%;
+    margin-top: -12%;
+    position: absolute;
+  }
+
+  .square{
+    color:black;
+  }
+
+  .red1 {
+    margin-top: -25%;
+    position: absolute;
+    margin-left: 64%;
+}
+
+.yellow1 {
+    position: absolute;
+    margin-top: -25%;
+    margin-left: 74%;
+}
+
+.yellow2 {
+    position: absolute;
+    margin-top: -25%;
+    margin-left: 84%;
+}
+
+.red2 {
+    position: absolute;
+    margin-top: -25%;
+    margin-left: 93.1%;
+}
+.red3 {
+    position: absolute;
+    margin-top: -17.5%;
+    margin-left: 36.2%;
+}
+
+.yellow3 {
+    margin-top: -17.5%;
+    margin-left: 45.4%;
+    position: absolute;
+}
+.yellow4 {
+    margin-top: -17.5%;
+    margin-left: 54.6%;
+    position: absolute;
+}
+.red4 {
+    margin-top: -17.5%;
+    margin-left: 64.3%;
+    position: absolute;
+}
+.yellow5 {
+    margin-top: -17.5%;
+    margin-left: 74%;
+    position: absolute;
+}
+
+.yellow6 {
+    margin-top: -17.5%;
+    margin-left: 84%;
+    position: absolute;
+}
+.red5 {
+    margin-top: -17.5%;
+    margin-left: 93.3%;
+    position: absolute;
+}
+.red6 {
+    margin-top: -10%;
+    margin-left: 36.3%;
+    position: absolute;
+}
+.yellow7 {
+    margin-top: -10%;
+    margin-left: 45.5%;
+    position: absolute;
+}
+
+.yellow8 {
+    margin-top: -10%;
+    margin-left: 54.6%;
+    position: absolute;
+}
+.yellow9 {
+    margin-top: -10%;
+    margin-left: 64.2%;
+    position: absolute;
+}
+
+.second{
+position: absolute;
+width: 24.2%;
+height: 67%;
+opacity: 0.5;
+}
+
+
+
+
+
+</style>
+</head>
+
+
+<body>
+
+  <div>
+    <img class="first" src="images/2top.gif">
+  </div>
+
+  <div class="fall">
+  <button class="head">2018 Fall Semester</button>
+   <div class="fall-content">
+    <a href="#">2018 Spring Semester</a>
+   <a href="#">2019 Spring Semester</a>
+    <a href="#">2019 Fall Semester</a>
+   </div>
+  </div>
+
+
+<div class="ours">
+ <ul>
+  <li><a href="#me" class="me">Interactive</a></li>
+  <li><a href="#he">Writing 1 </a></li>
+  <li><a href="#she">Social Problem</a></li>
+  <li><a href="#his">Philosophy</a></li>
+  <li><a href="#her">GD1</a></li>
+ </ul>
+</div>
+
+<div class="unblock">Unblock</div>
+<div><img class="check" src="images/check.gif"></div>
+<div class="block">Block</div>
+<div><img class="uncheck" src="images/uncheck.gif"></div>
+
+<div class="unfinished">Unfinished</div>
+<div><img class="red" src="images/red.gif"></div>
+<div class="finished">Finished</div>
+<div><img class="yellow" src="images/yellow.gif"></div>
+<div class="explain">You can choose to let everyone see their own homepage. You can also choose to turn off.</div>
+
+
+
+<div>
+  <img class="left" src="images/left.gif">
+  <img class="right" src="images/right.gif">
+</div>
+
+<div>
+  <img class="calender" src="images/calender.gif">
+</div>
+
+<div class="square">
+  <div class="red1">
+  <p><b><a href="orange.htm" target="_blank">_</a></b></p>
+  </div>
+<div class="yellow1">
+  <p><b><a href="yellow.htm" target="_blank">_</a></b></p>
+</div>
+<div class="yellow2">
+  <p><b><a href="yellow.htm" target="_blank">_</a></b></p>
+</div>
+<div class="red2">
+  <p><b><a href="orange.htm" target="_blank">_</a></b></p>
+</div>
+<div class="red3 ">
+  <p><b><a href="orange.htm" target="_blank">_</a></b></p>
+</div>
+<div class="yellow3 ">
+  <p><b><a href="yellow.htm" target="_blank">_</a></b></p>
+</div>
+<div class="yellow4">
+  <p><b><a href="yellow.htm" target="_blank">_</a></b></p>
+</div>
+<div class="red4">
+  <p><b><a href="orange.htm" target="_blank">_</a></b></p>
+</div>
+<div class="yellow5">
+  <p><b><a href="yellow.htm" target="_blank">_</a></b></p>
+</div>
+<div class="yellow6">
+  <p><b><a href="finished.htm" target="_blank">_</a></b></p>
+</div>
+<div class="red5">
+  <p><b><a href="orange.htm" target="_blank">_</a></b></p>
+</div>
+<div class="red6">
+  <p><b><a href="orange.htm" target="_blank">_</a></b></p>
+</div>
+<div class="yellow7">
+  <p><b><a href="yellow.htm" target="_blank">_</a></b></p>
+</div>
+<div class="yellow8">
+  <p><b><a href="yellow.htm" target="_blank">_</a></b></p>
+</div>
+<div class="yellow9">
+  <p><b><a href="yellow.htm" target="_blank">_</a></b></p>
+</div>
+
+</div>
+
+<div class="second" style="background-color:#61A6AB">
+</div>
+
+
+
+
+    <!-- page content -->
+  </body>
+</html>
