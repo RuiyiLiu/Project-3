@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap|Josefin+Sans|Kanit|Righteous|Teko" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $( document ).ready(function() {
+
+        $('input.c1').on('change', function() {
+
+          $('input.c1').not(this).prop('checked', false);
+          $('input.c1').not(this).removeClass("itschecked");
+          $(this).addClass("itschecked");
+
+          if ($('.its1').hasClass('itschecked')){
+            console.log ("jho");
+            $('.mes2').addClass('hideme');
+            $('.mes1').removeClass('hideme');
+          } else if ($('.its2').hasClass('itschecked')) {
+            console.log ("jho");
+            $('.mes1').addClass('hideme');
+            $('.mes2').removeClass('hideme');
+          }
+
+        });
+
+
+
+      });
+
+
+
+    </script>
+    <style>
+    body{
+      width:100%;
+      height:100%;
+      background-color:#F5F5F5;
+    }
+
+    img.first {
+      width: 97.3%;
+      margin-top:0.55%;
+      margin-left: -2%;
+      position:relative;
+    }
+
+    .calender {
+      margin-left: 16.3%;
+      margin-top: 4%;
+      width: 87%;
+      height: 138%;
+      position:absolute;;
+    }
+
+    .second{
+      position: absolute;
+      width: 28%;
+      height: 258%;
+      opacity: 0.3;
+      margin-top: -29.5%;
+      margin-left: 0%;
+    }
+
+
+    .head {
+      background-color: #9AC398;
+      color: black;
+      padding: 17px;
+      font-size: 28px;
+      border: none;
+      cursor: pointer;
+      font-family: 'Kanit', sans-serif;
+}
+
+.fall {
+    position: relative;
+    display: inline-block;
+    font-family:'Kanit', sans-serif;
+}
+
+.fall-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 25px;
+}
+
+.fall-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.fall-content a:hover {background-color: #f1f1f1}
+
+.fall:hover .fall-content {
+    display: block;
+}
+
+.fall:hover .head {
+    background-color: #3e8e41;
+}
+
+.ours {
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    line-height: 184%;
+  }
+
+ul {
+  list-style-type: none;
+  margin: 14px;
+  padding: 2px;
+  max-width: none;
+}
+
+li a {
+  display: inline;
+  width: 50px;
+  color: black;
+  line-height: 3;
+  font-size: 30px;
+}
+
+
+.explain {
+  font-size: medium;
+  font-family: 'Kanit', sans-serif;
+  position: absolute;
+  margin-left: 40%;
+  margin-top: -47%;
+}
+
+.welcome{
+font-size: xx-large;
+text-align: -webkit-center;
+margin-top: 17%;
+margin-left: 0%;
+}
+
+.p1 {
+    font-size: x-large;
+    font-family: 'Kanit', sans-serif;
+    text-align: -webkit-center;
+    margin-top: -1%;
+    margin-left: 1%;
+}
+.p2 {
+    font-size: large;
+    font-family: 'Kanit', sans-serif;
+    text-align: -webkit-center;
+    max-width: 45.5%;
+    margin-left: 28%;
+    margin-top: 2%;
+}
+.p3 {
+    font-size: x-large;
+    font-family: 'Kanit', sans-serif;
+    text-align: -webkit-center;
+    margin-top: 2%;
+    margin-left: 3%;
+    color: forestgreen;
+}
+
+.checkboxes {
+    float: right;
+    margin-right: 75px;
+    z-index: 2 !important;
+    position: relative;
+}
+
+/* CSS FOR checkboxes */
+
+.container {
+display: block;
+position: relative;
+padding-left: 35px;
+margin-bottom: 12px;
+cursor: pointer;
+font-size: 22px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+float: left;
+margin-left: 20px;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 25px;
+width: 25px;
+background-color: #F5E6CC;
+
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+background-color: #E45000;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+background-color: #E4C200;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid #F5E6CC;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+.calholder {
+position: relative;
+}
+
+.checkmessage {
+float: right;
+clear: right;
+position: absolute;
+right: 0px;
+margin-right: 113px;
+margin-top: -61px;
+font-style: 'Kanit', sans-serif;
+color:black;
+font-size:17px;
+}
+
+.hideme {
+opacity:0;
+}
+
+
+.blanky {
+    background-color: #FAEBD7;
+    width: 783px;
+    height: 500px;
+    position: absolute;
+    margin-top: -43%;
+    margin-left: 25%;
+}
+
+
+     </style>
+
+  </head>
+
+  <body>
+
+    <div>
+      <img class="first" src="images/2top.gif">
+    </div>
+
+    <div class="checkmessage hideme mes1">
+      <h2>Click this to open your homepage for everyone</h2>
+    </div>
+    <div class="checkmessage hideme mes2">
+      <h2>Click this to close your homepage</h2>
+    </div>
+
+    <!-- YOUR CHECKBOXES -->
+    <div class="checkboxes">
+      <label class="container">Unblock
+        <input type="checkbox" class="c1 its1">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Block
+        <input type="checkbox" class="c1 its2">
+        <span class="checkmark"></span>
+      </label>
+    </div>
+
+
+
+
+    <div class="fall">
+  <button class="head">2018 Fall Semester</button>
+  <div class="fall-content">
+    <a href="#">2018 Spring Semester</a>
+    <a href="#">2019 Spring Semester</a>
+    <a href="#">2019 Fall Semester</a>
+  </div>
+</div>
+
+<div class="ours">
+<ul>
+  <li><a class="a" href="interactive.htm" target="_blank" style="color:;">Interactive</a></li>
+  <li><a href="#he">Writing 1 </a></li>
+  <li><a href="#she">Social Problem</a></li>
+  <li><a href="#his">Philosophy</a></li>
+  <li><a href="#her">GD1</a></li>
+</ul>
+</div>
+
+
+<div class="blanky">
+<div>
+  <h1 class="welcome">Welcome Back!</h>
+</div>
+
+<div class="p1">
+  <p1>Please strat your work!</p1>
+</div>
+<div class="p2">
+  <p2>There are 42 people today who remind you to finish your work on time. You've only finished 27% of your work this week.</p2>
+</div>
+<div class="p3">
+  <p3>Keep exercise, you're the best!<p3>
+</div>
+</div>
+
+
+
+
+
+
+
+    <!-- page content -->
+  </body>
+</html>
